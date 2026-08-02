@@ -1,0 +1,28 @@
+# Ivy Lane Pottery
+
+Donna Ivy (Owner) request:
+
+```
+You can use https://hollygreyceramics.com as a reference.
+
+I have attached the logo you created, my headshot, and the pictures for the website gallery.
+
+Add Contact info at the bottom with my email address.
+
+About my Work
+"My work celebrates beauty through ceramics, exploring form, texture, and surface design through hand-built and wheel-thrown pieces. I use carving, layering and expressive glazes to create depth and movement, allowing each vessel or sculptural form to carry its own character. My most recent work includes Nerikomi, combining multiple different clays to create pattern through changing color. Whether functional or purely sculptural, my ceramics are designed to invite touch, connection, and a sense of warmth and artistry into everyday spaces."
+
+Artist Statement
+As a lifelong Texans and passionate artist, I have explored a variety of creative pursuits throughout my life. four years ago, I discovered ceramics and quickly found my home in the studio. my work emphasizes form and service design with a particular focus on a layered glazes and color change. My recent interest in Nerikomi, which uses colored clays combined to create patterns in the vessel rather than on the surface, continues this focus.
+
+Bio
+Donna Ivy holds a B.S. from the University of Texas Southwestern. She has studied with multiple professional ceramic artists in the DFW area and at the Anderson Ranch Arts Center in Snowmass, Colorado. She maintains her studio and is an artist-in-residence at Glaze Ceramic Studio in McKinney, Texas.
+
+Email: dkgivy@gmail.com
+```
+
+## Instructions to AI
+
+Create a static website, suitable for display from GitHub, modelled after <https://hollygreyceramics.com>. Pottery gallery images are in "./assets/pottery". People (owner) images are in "./assets/people".
+
+We will use the domain "IvyLanePottery.com". Please include instructions for domain DNS setup (both DNS host and GitHub repo).
