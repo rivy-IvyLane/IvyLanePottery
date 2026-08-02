@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivy Lane Pottery &mdash; Donna Ivy, McKinney Texas</title>
+  <meta name="description" content="Hand-built and wheel-thrown ceramics by Donna Ivy. Artist-in-residence at Glaze Ceramic Studio, McKinney, Texas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo/Ivy%20Lane%20Pottery%20Logo%20-%20ChatGPT%20Image%20Nov%203,%202025,%2010_48_08%20PM.png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header id="header">
+    <nav>
+      <a href="#top" class="nav-logo">
+        <img src="assets/logo/Ivy%20Lane%20Pottery%20Logo%20-%20ChatGPT%20Image%20Nov%203,%202025,%2010_48_08%20PM.png" alt="" class="nav-logo-img">
+        Ivy Lane Pottery
+      </a>
+      <ul class="nav-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="assets/logo/Ivy%20Lane%20Pottery%20Logo%20-%20ChatGPT%20Image%20Nov%203,%202025,%2010_48_08%20PM.png" alt="Ivy Lane Pottery logo" class="hero-logo">
+      </div>
+      <p class="hero-eyebrow">Hand-Built &amp; Wheel-Thrown Ceramics</p>
+      <h1>Ivy Lane Pottery</h1>
+      <p class="hero-location">McKinney, Texas</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid" id="gallery-grid"></div>
+    <div class="show-more-wrap">
+      <button class="btn-outline" id="show-more-btn">Show More</button>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="about-layout">
+      <aside class="about-photo-col">
+        <img
+          src="assets/people/Donna%20Ivy%20-%20headshot%20%282026-05-29%29%20-%20PXL_20260529_194312892.RAW-01.jpg"
+          alt="Donna Ivy"
+          class="artist-photo"
+        >
+        <p class="artist-name-caption">Donna Ivy</p>
+      </aside>
+      <div class="about-text-col">
+        <h2 class="section-title align-left">About My Work</h2>
+        <p class="body-text">My work celebrates beauty through ceramics, exploring form, texture, and surface design through hand-built and wheel-thrown pieces. I use carving, layering and expressive glazes to create depth and movement, allowing each vessel or sculptural form to carry its own character. My most recent work includes Nerikomi, combining multiple different clays to create pattern through changing color. Whether functional or purely sculptural, my ceramics are designed to invite touch, connection, and a sense of warmth and artistry into everyday spaces.</p>
+
+        <h3 class="subsection-title">Artist Statement</h3>
+        <p class="body-text">As a lifelong Texan and passionate artist, I have explored a variety of creative pursuits throughout my life. Four years ago, I discovered ceramics and quickly found my home in the studio. My work emphasizes form and surface design with a particular focus on layered glazes and color change. My recent interest in Nerikomi, which uses colored clays combined to create patterns in the vessel rather than on the surface, continues this focus.</p>
+
+        <h3 class="subsection-title">Bio</h3>
+        <p class="body-text">Donna Ivy holds a B.S. from the University of Texas Southwestern. She has studied with multiple professional ceramic artists in the DFW area and at the Anderson Ranch Arts Center in Snowmass, Colorado. She maintains her studio and is an artist-in-residence at Glaze Ceramic Studio in McKinney, Texas.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-line"><a href="mailto:dkgivy@gmail.com" class="contact-email">dkgivy@gmail.com</a></p>
+    <p class="contact-studio">Glaze Ceramic Studio &middot; McKinney, Texas</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Ivy Lane Pottery &middot; Donna Ivy</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-btn lb-close" onclick="closeLB()" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" onclick="moveLB(-1)" aria-label="Previous">&#8249;</button>
+    <img id="lb-img" alt="Pottery by Donna Ivy">
+    <button class="lb-btn lb-next" onclick="moveLB(1)" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const images = [
+      "08F8FD17-3536-4A69-ADA6-22E79BCB6AB8 - Edited - Edited.png",
+      "IMG_2814 - Edited - Edited.png",
+      "IMG_3567 - Edited - Edited.png",
+      "IMG_3751 - Edited.png",
+      "IMG_3781 - Edited - Edited.png",
+      "IMG_3953 - Edited - Edited.png",
+      "IMG_4251 - Edited - Edited.png",
+      "IMG_4905 - Edited - Edited.png",
+      "IMG_5240 - Edited - Edited.png",
+      "IMG_5251 - Edited - Edited - Edited - Edited.png",
+      "IMG_5279 - Edited - Edited.png",
+      "IMG_5294 - Edited - Edited.png",
+      "IMG_5355 - Edited - Edited.png",
+      "IMG_5362 - Edited - Edited.png",
+      "IMG_5366 - Edited - Edited.png",
+      "IMG_5369 - Edited - Edited.png",
+      "IMG_5385 - Edited - Edited.png",
+      "IMG_5652 - Edited - Edited.png",
+      "IMG_5662 - Edited - Edited (1).png",
+      "IMG_5662 - Edited - Edited (2).png",
+      "IMG_5662 - Edited - Edited.png",
+      "IMG_5665 - Edited - Edited.png",
+      "IMG_5688 - Edited - Edited.png",
+      "IMG_5749 - Edited - Edited.png",
+      "IMG_5758 - Edited.png",
+      "IMG_5764 - Edited - Edited.png",
+      "IMG_5765 - Edited - Edited.png",
+      "IMG_6232 - Edited - Edited.png",
+      "IMG_6500 (1) - Edited - Edited.png",
+      "IMG_6502 - Edited.png",
+      "IMG_6503 - Edited.png",
+      "IMG_6504 - Edited.png"
+    ];
+
+    const INITIAL_COUNT = 12;
+    let showing = INITIAL_COUNT;
+
+    function encodeImageName(name) {
+      return name.replace(/ /g, '%20').replace(/\(/g, '%28').replace(/\)/g, '%29');
+    }
+
+    function imageSrc(name) {
+      return 'assets/pottery/' + encodeImageName(name);
+    }
+
+    const grid = document.getElementById('gallery-grid');
+    const showMoreBtn = document.getElementById('show-more-btn');
+
+    function renderGallery() {
+      const existing = grid.querySelectorAll('.gallery-item').length;
+      for (let i = existing; i < showing && i < images.length; i++) {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        const img = document.createElement('img');
+        img.src = imageSrc(images[i]);
+        img.alt = 'Pottery by Donna Ivy';
+        img.loading = 'lazy';
+        item.appendChild(img);
+        const idx = i;
+        item.addEventListener('click', () => openLB(idx));
+        grid.appendChild(item);
+      }
+      showMoreBtn.style.display = (showing >= images.length) ? 'none' : '';
+    }
+
+    showMoreBtn.addEventListener('click', () => {
+      showing = Math.min(showing + 12, images.length);
+      renderGallery();
+    });
+
+    renderGallery();
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    let lbIndex = 0;
+
+    function openLB(i) {
+      lbIndex = i;
+      lbImg.src = imageSrc(images[i]);
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLB() {
+      lightbox.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    function moveLB(dir) {
+      lbIndex = (lbIndex + dir + images.length) % images.length;
+      lbImg.src = imageSrc(images[lbIndex]);
+    }
+
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLB();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (lightbox.hidden) return;
+      if (e.key === 'Escape') closeLB();
+      if (e.key === 'ArrowLeft') moveLB(-1);
+      if (e.key === 'ArrowRight') moveLB(1);
+    });
+  </script>
+
+</body>
+</html>
